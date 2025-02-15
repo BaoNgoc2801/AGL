@@ -1,261 +1,163 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo" href="./images/logo/logo.svg">
     <title>Sales Score</title>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-
-<div class="home">
 <div class="container">
+    <div class="page-content">
 
-    <button class="menu-toggle">☰</button>
-    <div class="overlay"></div>
-
-
-    <aside class="sidebar">
-        <div class="logo">
-            <img src="assets%20%20%20/images/logo.png" alt="Sales Score ロゴ">
-        </div>
-        <button class="support-btn">
-            <span class="content-btn">サポートサイト</span>
-        </button>
-        <nav>
-            <ul>
-                <li><a href="#">検査結果画面の解説 <img src="assets%20%20%20/icons/arrow.png" alt="arrow"></a></li>
-                <li><a href="#">主な機能 <img src="assets%20%20%20/icons/arrow.png" alt="arrow"></a></li>
-                <li><a href="#">利用シーン別ガイド <img src="assets%20%20%20/icons/arrow.png" alt="arrow"></a></li>
-                <li><a href="#">初めてご利用の方へ <img src="assets%20%20%20/icons/arrow.png" alt="arrow"></a></li>
-                <li><a href="#">FAQ <img src="assets%20%20%20/icons/arrow.png" alt="arrow"></a></li>
+        <!-- ============== SIDEBAR =====================-->
+        <div class="left-sidebar">
+            <div class="sidebar__header">
+                <div class="logo"><img src="./images/logo/logo-text.svg" width="163px" height="54px" alt=""></div>
+                <button>サポートサイト</button>
+            </div>
+            <ul class="sidebar__list" id="sideMenu">
+                <li class="menu-item"><a href="#"><span>検査結果画面の解説</span><img src="./images/header/arrow.svg" width="9px" height="14px" alt=""/></a></li>
+                <li class="menu-item"><a href="#"><span>主な機能</span><img src="./images/header/arrow.svg" width="9px" height="14px" alt=""/></a></li>
+                <li class="menu-item"><a href="#"><span>利用シーン別ガイド</span><img src="./images/header/arrow.svg" width="9px" height="14px" alt=""/></a></li>
+                <li class="menu-item"><a href="#"><span>初めてご利用の方へ</span><img src="./images/header/arrow.svg" width="9px" height="14px" alt=""/></a></li>
+                <li class="menu-item"><a href="#"><span>FAQ</span><img src="./images/header/arrow.svg" width="9px" height="14px" alt=""/></a></li>
             </ul>
-        </nav>
-    </aside>
+        </div>
 
-    <!-- Nội dung chính gồm navbar + content -->
-    <div class="main-content">
-        <!-- Navbar -->
-        <header class="header">
-            <div class="navbar">
-            <div class="breadcrumb">
-                <span class="home-icon"><img src="assets%20%20%20/icons/house.png" alt="home"></span>
-                <span class="content-nav">トップ</span>
-            </div>
-            <div class="nav-links">
-                <a href="#" class="login">ログイン</a>
-                <span class="login-icon">️<img src="assets%20%20%20/icons/login.png" alt="login"></span>
-                <a href="#" class="email">お問い合わせ </a>
-                <span class="email-icon">️<img src="assets%20%20%20/icons/email.png" alt="email"></span>
-            </div>
-            </div>
-
-
-            <!-- Search Bar -->
-            <div class="search-bar">
-                <span class="search-label">どんな事でお困りですか？</span>
-                <div class="search-container">
-                    <span class="search-icon">️<img src="assets%20%20%20/icons/glass.png" alt="glass"></span>
-                    <input type="text" placeholder="キーワードを入力">
-                </div>
-                <button class="search-btn"><span class="content-search-btn">検索</span></button>
-            </div>
-        </header>
-
-        <main>
-            <div class="pages-wrapper">
-            <div class="content-header1">
-                <img src="assets%20%20%20/images/header.png" alt="利用シーン別ガイドのイラスト">
-                <div>
-                    <h1>利用シーン別ガイド</h1>
-                    <p>SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</p>
-                </div>
-            </div>
-                <!-- Page 1 -->
-                <div class="page-1">
-            <div class="grid-container">
-                <button class="grid-item ">
-                    <img src="assets%20%20%20/icons/chart.png" alt="チャートアイコン" class="icon1">
-                    <span class="content1">受検者の営業活動の特徴を見える化したい</span>
-                </button>
-
-                <button class="grid-item ">
-                    <img src="assets%20%20%20/icons/person.png" alt="チームアイコン" class="icon2">
-                    <span class="content2">ポテンシャルの高い人材を採用したい</span>
-                </button>
-
-                <button class="grid-item" >
-                    <img src="assets%20%20%20/icons/growth.png" alt="成長アイコン" class="icon3">
-                    <span class="content3">離職率を改善したい</span>
-                </button>
-
-                <button class="grid-item ">
-                    <img src="assets%20%20%20/icons/search.png" alt="検索アイコン" class="icon4">
-                    <span class="content4">成績優秀層を分析したい</span>
-                </button>
-
-                <button class="grid-item ">
-                    <img src="assets%20%20%20/icons/building.png" alt="企業アイコン" class="icon5">
-                    <span class="content5">自社の特徴を理解したい</span>
-                </button>
-
-                <button class="grid-item">
-                    <img src="assets%20%20%20/icons/chat.png" alt="チャットアイコン" class="icon6">
-                    <span class="content6">社員のコミュニケーションを改善したい</span>
-                </button>
-            </div>
+        <!-- ============== NAVBAR ========================-->
+        <div class="main">
+            <div class="main__content">
+                <div class="nav-logo"><img class="close-toggle" id="closeMenu" src="./images/header/close-icon.svg" width="20px" height="20px" alt=""><img class="bars-toggle" id="toggleMenu" src="images/header/bars-icon.svg" width="20px" height="20px" alt=""><a href="#"><img src="./images/logo-text.svg" width="163px" height="54px" alt=""></a></div>
+                <div class="navbar">
+                    <div class="nav-home"><a class="home" href="#"><img src="./images/header/home-icon.svg" width="18px" height="16px">
+                        <p>トップ</p></a></div>
+                    <div class="options"><a class="share" href="#">
+                        <p>ログイン</p><img src="./images/header/share-icon.svg" width="14px" height="14px"></a><a class="mail" href="#">
+                        <p>お問い合わせ</p><img src="./images/header/mail-icon.svg" width="20px" height="15px"></a></div>
                 </div>
 
-            <!-- Page 2 -->
-            <div class="content-header2">
-                <img src="assets%20%20%20/images/header2.png" alt="分析結果のイラスト">
-                <div>
-                    <h1>検査結果画面の解説</h1>
-                    <p>SALES SCOREのアウトプット項目について紹介します。</p>
-                </div>
-            </div>
-
-                <div class="page-2">
-            <div class="section-title">適性検査のアウトプット</div>
-                <div class="grid-container">
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/report.png" alt="データサマリー" class="img1">
-                        <span class="content-page1">データサマリー</span>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/details.png" alt="データ詳細" class="img2">
-                        <span class="content-page2">データ詳細</span>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/compare.png" alt="データ比較" class="img3">
-                        <span class="content-page3">データ比較</span>
-                    </a>
-                </div>
-
-            <div class="section-title">企業傾向分析</div>
-                 <div class="grid-container">
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/overview.png" alt="全体比較" class="img4">
-                        <span class="content-page4">全体比較</span>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/segment.png" alt="営業タイプ傾向" class="img5">
-                        <span class="content-page5">営業タイプ傾向</span>
-                    </a>
-                    <a href="#" class="grid-item">
-                        <img src="assets%20%20%20/icons/trend.png" alt="High-Low分析" class="img6">
-                        <span class="content-page6">High-Low分析</span>
-                        </a>
-                 <a href="#" class="grid-item">
-                     <img src="assets%20%20%20/icons/composition.png" alt="構成比比較" class="img7">
-                     <span class="content-page7">構成比比較</span>
-                 </a>
-                 </div>
-
-           <div class="section-title">検査結果詳細</div>
-                    <div class="grid-container">
-                        <a href="#" class="grid-item">
-                            <img src="assets%20%20%20/icons/type.png" alt="表示される予測値" class="img8">
-                            <span class="content-page8">表示される予測値</span>
-                        </a>
-                        <a href="#" class="grid-item">
-                            <img src="assets%20%20%20/icons/forecast.png" alt="表示される営業タイプ" class="img9">
-                            <span class="content-page9">表示される営業タイプ</span>
-                        </a>
+                <!-- ==============SEARCH====================-->
+                <div class="search">
+                    <p>どんな事でお困りですか？ </p>
+                    <div class="search-bar">
+                        <input class="input-search" type="text" placeholder="キーワードを入力"><img src="./images/header/search-icon.svg" alt="">
+                    </div>
+                    <div class="btn-search">
+                        <button>検索</button>
                     </div>
 
-            </div>
-
-
-                <!-- Page 3 -->
-                <div class="content-header3">
-                    <img src="assets%20%20%20/images/header3.png" alt="分析結果のイラスト">
-                    <div>
-                        <h1>主な機能</h1>
-                        <p>SALES SCOREの利用方法及び、ツールに表示される項目について紹介します。</p>
-                    </div>
+                    <!-- ==============FIRST-SECTION=========================-->
                 </div>
+                <div class="first-section">
+                    <div class="section__title"><img src="./images/section1/section1-title.svg" width="190px" height="149px"/>
+                        <div class="section-info">
+                            <h1>利用シーン別ガイド</h1>
+                            <h3>SALES SCOREを様々なシーンでご活用いただく方法をご紹介します。</h3>
+                        </div>
+                    </div>
+                    <div class="section__list1"><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon1.svg" width="41px" height="27px"/>
+                        <p>受検者の営業活動の特徴を 見える化したい</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon2.svg" width="21px" height="26px"/>
+                        <p>ポテンシャルの高い人材を 採用したい</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon3.svg" width="36px" height="42px"/>
+                        <p>離職率を改善したい</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon4.svg" width="29" height="29"/>
+                        <p>成績優秀層を分析したい</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon5.svg" width="30px" height="37px"/>
+                        <p>自社の特徴を理解したい</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section1/section1-icon6.svg" width="41px" height="32px"/>
+                        <p>社員のコミュニケーションを 改善したい</p></a>
+                    </div>
 
-                <div class="page-3">
-                <div class="container">
-
-                    <div class="box">
-                        <h2>管理者</h2>
-                        <div class="content-box1">
-                        <p>
-                            ・管理者の登録・編集
-                        </p>
-                        <p>・表示される管理者情報</p>
+                    <!-- ==============SECOND-SECTION=========================-->
+                    <div class="second-section">
+                        <div class="section__title"><img src="./images/section2/section2-title.svg" width="122px" height="137px"/>
+                            <div class="section-info">
+                                <h1>検査結果画面の解説</h1>
+                                <h3>SALES SCOREのアウトプット項目について紹介します。</h3>
+                            </div>
+                        </div>
+                        <div class="section__content">
+                            <h6 class="section__list2-title">適性検査のアウトプット</h6>
+                            <div class="section__list2"><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon1.svg" width="135px" height="61px"/>
+                                <p>データサマリー</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon2.svg" width="112px" height="42px"/>
+                                <p>データ詳細</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon3.svg" width="107px" height="56px"/>
+                                <p>データ比較</p></a>
+                            </div>
+                        </div>
+                        <div class="section__content">
+                            <h6 class="section__list2-title">企業傾向分析</h6>
+                            <div class="section__list2"><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon4.svg" width="107px" height="56px"/>
+                                <p>全体比較</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon5.svg" width="109px" height="57px"/>
+                                <p>営業タイプ傾向</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon6.svg" width="107px" height="56px"/>
+                                <p>High-Low分析</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon7.svg" width="105px" height="44px"/>
+                                <p>構成比比較</p></a>
+                            </div>
+                        </div>
+                        <div class="section__content">
+                            <h6 class="section__list2-title">検査結果詳細</h6>
+                            <div class="section__list2"><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon8.svg" width="134px" height="52px"/>
+                                <p>表示される予測値</p></a><a class="sectionList1-item sectionList2-item" href="#"><img src="./images/section2/section2-icon9.svg" width="109px" height="57px"/>
+                                <p>表示される営業タイプ</p></a>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="box">
-                        <h2 class="title-box1">従業員</h2>
-                        <div class="content-box2">
-                        <p>・従業員の登録・編集</p>
-                        <p> ・表示される従業員情報</p>
+                    <!-- ==============THIRD-SECTION=========================-->
+                    <div class="third-section">
+                        <div class="section__title"><img src="./images/section3/section2-title.svg" width="125px" height="117px"/>
+                            <div class="section-info">
+                                <h1>主な機能</h1>
+                                <h3>SALES SCOREの利用方法及び、ツールに表示される項目について紹介します。</h3>
+                            </div>
                         </div>
-                    </div>
-
-                    <div class="box">
-                        <h2>応募者</h2>
-                        <div class="content-box3">
-                        <p>・応募者の登録・編集</p>
-                        <p> ・表示される応募者情報</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <h2>実績データの登録</h2>
-                        <div class="content-box4">
-                        <p>   ・実績の登録・編集</p>
-                         <p>   ・分析対象範囲の指定 </p>
-                          <p>・成績区分の指定</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <h2>適性検査</h2>
-                        <div class="content-box5">
-                        <p>  ・適性検査推奨環境</p>
-                        <p> ・受検メールの送信 </p>
-                        <p>・ＵＲＬの発行</p>
-                        <p>・受検者のステータス</p>
-                        <p>・検査実施項目
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <h2>ダッシュボード機能</h2>
-                        <div class="content-box6">
-                          <p>  ・実績データ分析機能</p>
-                           <p> ・運用サポート機能</p>
-                        </div>
-                    </div>
-
-                    <div class="box">
-                        <h2>契約について</h2>
-                        <div class="content-box7">
-                          <p> ・契約情報の確認</p>
-                           <p> ・解約の方法</p>
+                        <div class="section__content">
+                            <div class="section__item">
+                                <h6 class="section__item-title">管理者</h6>
+                                <li class="item-list3"><a href="#">・管理者の登録・編集</a></li>
+                                <li class="item-list3"><a href="#">・表示される管理者情報</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">従業員</h6>
+                                <li class="item-list3"><a href="#">・従業員の登録・編集</a></li>
+                                <li class="item-list3"><a href="#">・表示される従業員情報</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">応募者</h6>
+                                <li class="item-list3"><a href="#">・応募者の登録・編集</a></li>
+                                <li class="item-list3"><a href="#">・表示される応募者情報</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">実績データの登録</h6>
+                                <li class="item-list3"><a href="#">・実績の登録・編集</a></li>
+                                <li class="item-list3"><a href="#">・分析対象範囲の指定</a></li>
+                                <li class="item-list3"><a href="#">・成績区分の指定</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">適性検査</h6>
+                                <li class="item-list3"><a href="#">・適性検査推奨環境</a></li>
+                                <li class="item-list3"><a href="#">・受検メールの送信</a></li>
+                                <li class="item-list3"><a href="#">・ＵＲＬの発行</a></li>
+                                <li class="item-list3"><a href="#">・受検者のステータス</a></li>
+                                <li class="item-list3"><a href="#">・検査実施項目</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">ダッシュボード機能</h6>
+                                <li class="item-list3"><a href="#">・実績データ分析機能 </a></li>
+                                <li class="item-list3"><a href="#">・運用サポート機能</a></li>
+                            </div>
+                            <div class="section__item">
+                                <h6 class="section__item-title">契約について</h6>
+                                <li class="item-list3"><a href="#">・契約情報の確認</a></li>
+                                <li class="item-list3"><a href="#">・解約の方法</a></li>
+                            </div>
                         </div>
                     </div>
                 </div>
-                </div>
-
             </div>
-        </main>
+        </div>
     </div>
-
 </div>
-
-<footer class="footer">
-    <p>Copyright © 2022 SALES SCORE All Rights Reserved..</p>
-</footer>
+<div class="footer">
+    <p>Copyright © 2022 SALES SCORE All Right Reserved. .</p>
 </div>
-
-
-<script src="js/script.js"></script>
+<script src="./js/script.js"></script>
 </body>
 </html>
